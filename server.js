@@ -19,6 +19,6 @@ app.use(express.json());
 app.use('/users', userRouter);
 app.use('/contacts', contactRouter);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log('app is ready');
 });
